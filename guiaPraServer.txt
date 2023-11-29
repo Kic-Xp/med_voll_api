@@ -1,16 +1,10 @@
-só um negócio para iniciar o jar no terminal do server ou de algum Server na Nuvem , 
-roda o comando no terminal:
+Aqui é apenas um pequeno passo a passo de como iniciar o projeto
 
-java -Dspring.profiles.active=prod -DDATASOURCE_URL=jdbc:mysql://localhost:voll.med_api -DDATASOURCE_USERNAME=root -DDATASOUCE_PASSWORD=BarrelKing777 -jar api-0.0.1-SNAPSHOT.jar 
+java -Dspring.profiles.active=prod -DDATASOURCE_URL=jdbc:mysql://localhost:3306/voll.med_api -DDATASOURCE_USERNAME=root -DDATASOURCE_PASSWORD= -jar api-0.0.1-SNAPSHOT.jar 
 
-em um comando só viu, 
-
-OBS: tira os paramentros -DDATASOURCE caso voce tenha as variaveis de ambiente configuradas.
+OBS: tira os paramentros -D e -DDATASOURCE caso voce tenha as variaveis de ambiente configuradas.
 
 depois de rodar digita no navegar a URL: http://localhost:8080/swagger-ui.html e testa aí, só lembra de 
 colocar o bearer token no authorize, faz o login no /login.
-
-
-
-
-System.out.println("Sensacioninha.");
+o Usuario cadastrado é mari@voll.med
+e a senha 123456.
