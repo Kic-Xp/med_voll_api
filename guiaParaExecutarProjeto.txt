@@ -1,0 +1,18 @@
+Aqui é apenas um pequeno passo a passo de como iniciar o projeto no terminal de comando.
+Necessário ter instalado na máquina Java SE 17, e o MySql na versão 8.033 ou superior.
+
+Primeiro baixe o jar do projeto api.jar, dentro da pasta jar, e estando no mesmo diretório do jar execute o comando abaixo se você
+estiver no Windows:  
+
+java -Dspring.profiles.active=prod -DDATASOURCE_URL=jdbc:mysql://localhost:3306/voll_med_api -DDATASOURCE_USERNAME=root -DDATASOURCE_PASSWORD= -jar api.jar 
+
+No Linux é um pouco diferente:
+spring.profiles.active=prod DATASOURCE_URL=jdbc:mysql://localhost:3306/voll_med_api DATASOURCE_USERNAME=root DATASOURCE_PASSWORD= java -jar api.jar
+
+
+OBS: tira os parâmetros -D e -DDATASOURCE caso voce tenha as variáveis de ambiente configuradas, caso não tenha apenas execute o comando acima do jeito que está.
+
+depois de rodar digite no navegador a URL: http://localhost:8080/swagger-ui.html e teste a vontade.
+OBS:Colocar o bearer token no authorize,para obter o Token faça o login na URI /login.
+o Usuario cadastrado é mari@voll.med
+e a senha 123456.
