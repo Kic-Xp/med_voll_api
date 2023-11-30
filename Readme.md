@@ -1,4 +1,4 @@
-# Med Voll - API Rest para uma Clínica Fictícia, Pela Formação Spring Boot da Alura 
+# Med Voll - API Rest para uma Clínica Fictícia
 
 Bem-vindo ao repositório da API Rest da Med Voll, uma aplicação simulada para gerenciamento de uma clínica fictícia. Esta API foi desenvolvida utilizando tecnologias modernas para proporcionar um ambiente seguro, eficiente e escalável.
 
@@ -24,7 +24,7 @@ Bem-vindo ao repositório da API Rest da Med Voll, uma aplicação simulada para
 
 ## Documentação
 
-A documentação detalhada da API pode ser encontrada após a execução do projeto no site swagger-ui.html, como iniciar o projeto está logo abaixo:
+A documentação detalhada da API pode ser encontrada após a execução do projeto no site: swagger-ui.html.
 
 
 Agradecemos por explorar a API Med Voll!
