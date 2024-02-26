@@ -27,4 +27,4 @@ Bem-vindo ao repositório da API Rest da Med Voll, uma aplicação simulada para
 A documentação detalhada da API pode ser encontrada após a execução do projeto no site: swagger-ui.html.
 
 
-Agradecemos por explorar a API Med Voll!
+Agradeço por explorar a API Med Voll!
