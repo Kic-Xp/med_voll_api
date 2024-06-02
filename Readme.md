@@ -1,30 +1,91 @@
-# Med Voll - API Rest para uma Clínica Fictícia
+# Med Voll API
 
-Bem-vindo ao repositório da API Rest da Med Voll, uma aplicação simulada para gerenciamento de uma clínica fictícia. Esta API foi desenvolvida utilizando tecnologias modernas para proporcionar um ambiente seguro, eficiente e escalável.
+Este é um projeto de API para gerenciamento de uma clínica médica, desenvolvido em Java utilizando o framework Spring Boot. A API fornece funcionalidades para gerenciar médicos, pacientes, agendamentos e consultas.
 
-## Tecnologias Utilizadas
+## Estrutura do Projeto
 
-- **Java:** Linguagem de programação robusta e amplamente adotada.
-- **Spring Boot:** Framework para criação de aplicações Java de forma rápida e fácil.
-- **Spring MVC:** Módulo do Spring para desenvolvimento de aplicações web.
-- **Spring Security:** Módulo para segurança de aplicações Spring.
-- **Spring Doc:** Ferramenta para documentação automática da API.
-- **Token JWT:** Método seguro de autenticação e autorização.
-- **Bean Validation:** Validação de dados em nível de bean.
-- **Flyway:** Ferramenta para controle de versão e migração de bancos de dados.
-- **MySQL:** Banco de dados relacional utilizado para armazenamento de dados.
-- **JPA (Java Persistence API):** Padrão para mapeamento objeto-relacional.
-- **JPQL (Java Persistence Query Language):** Linguagem de consulta para JPA.
-- **JUnit e Mockito:** Bibliotecas de teste para garantir a qualidade do código.
+- **/.classpath**: Arquivo de configuração do classpath do projeto.
+- **/.gitignore**: Arquivo que especifica quais arquivos devem ser ignorados pelo Git.
+- **/.project**: Arquivo de configuração do projeto.
+- **/mvnw, /mvnw.cmd**: Scripts para executar o Maven Wrapper.
+- **/pom.xml**: Arquivo de configuração do Maven, contendo as dependências do projeto.
+- **/src/main**: Contém o código-fonte principal do projeto.
+  - **/java/med/voll/api**: Pacote base da aplicação.
+    - **/controller**: Contém os controladores REST.
+    - **/domain**: Contém as classes de domínio e os repositórios.
+    - **/infra**: Contém classes de infraestrutura, como configurações e serviços de segurança.
+    - **/service**: Contém as classes de serviço.
+- **/src/test**: Contém os testes do projeto.
+- **/target**: Diretório gerado pelo Maven para armazenar os artefatos construídos.
 
-## Princípios e Padrões
+## Funcionalidades
 
-- **SOLID:** Princípios de design de software para criar código mais compreensível, flexível e sustentável.
-- **Design Patterns:** Aplicação de padrões de projeto para resolver problemas comuns de design.
+- **Gerenciamento de Médicos**: Cadastro, atualização, exclusão e listagem de médicos.
+- **Gerenciamento de Pacientes**: Cadastro, atualização, exclusão e listagem de pacientes.
+- **Agendamentos**: Agendamento de consultas médicas.
+- **Consultas**: Gerenciamento de consultas realizadas.
 
-## Documentação
+## Tecnologias Usadas
 
-A documentação detalhada da API pode ser encontrada após a execução do projeto no site: swagger-ui.html.
+- **Java 17**: Linguagem de programação principal do projeto.
+- **Spring Boot**: Framework para facilitar a configuração e o desenvolvimento da aplicação.
+- **Spring Data JPA**: Abstração para interações com o banco de dados.
+- **H2 Database**: Banco de dados em memória para desenvolvimento e testes.
+- **Spring Security**: Framework para segurança da aplicação.
+- **JWT (JSON Web Token)**: Para autenticação e autorização.
+- **Maven**: Ferramenta de automação de compilação e gerenciamento de dependências.
+- **Swagger**: Para documentação e teste da API.
+- **JUnit**: Framework para testes unitários.
+- **Mockito**: Framework para criação de mocks em testes unitários.
 
+## Pré-requisitos
 
-Agradeço por explorar a API Med Voll!
+- Java 17
+- Maven 3.8.1+
+
+## Instalação
+
+1. Clone o repositório:
+
+    ```sh
+    git clone https://github.com/seu-usuario/med_voll_api.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```sh
+    cd med_voll_api
+    ```
+
+3. Compile o projeto e instale as dependências:
+
+    ```sh
+    ./mvnw clean install
+    ```
+
+## Configuração
+
+### Banco de Dados
+
+Este projeto utiliza o banco de dados H2 para desenvolvimento. A configuração do banco de dados pode ser encontrada no arquivo `src/main/resources/application.properties`.
+
+## Executando a Aplicação
+
+Para executar a aplicação, use o seguinte comando:
+
+```sh
+./mvnw spring-boot:run
+```
+A aplicação estará disponível em `http://localhost:8080`.
+## Documentação da API
+
+A documentação da API pode ser acessada através do Swagger, disponível em `http://localhost:8080/swagger-ui.html`.
+Testes
+
+Para executar os testes, utilize o seguinte comando:
+```sh
+./mvnw test
+```
+Agradecimentos
+
+Este projeto foi desenvolvido com o apoio da Alura na Formação Spring Boot com Rodrigo Caneppele.
